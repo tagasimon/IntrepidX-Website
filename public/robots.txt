@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://intrepidx.biz/sitemap.xml
