@@ -18,7 +18,7 @@ def work_page():
     sectors = "".join(f'<tr><td class="title-cell">{a}</td><td>{b}</td></tr>' for a, b in SECTORS)
     body = f"""
 <main id="main">
-{page_hero(root, "greek-general", "Marble head of a Greek general",
+{page_hero(root, "report", "Financial report with a price chart",
            [("index.html", "Home"), (None, "Our work")], "Track record", "Our work",
            "Our track record, the assignments in progress, the sectors we cover and where we have worked.")}
 
@@ -145,7 +145,7 @@ def contact_page():
     maps = "https://www.google.com/maps/search/?api=1&query=Plot+32+Bukasa+Road+Muyenga+Kampala"
     body = f"""
 <main id="main">
-{page_hero(root, "hand-scroll", "Marble hand holding a scroll",
+{page_hero(root, "kampala-dusk", "Kampala at dusk",
            [("index.html", "Home"), (None, "Contact")], "Contact", "Contact us",
            "To discuss an assignment or request company documents for a tender, contact the Company Secretary, Dean Niwarinda, at dniwarinda@intrepidx.biz.")}
 <section class="section section--ivory">
@@ -201,8 +201,9 @@ def error_page():
     root = "/"
     body = f"""
 <main id="main">
-<section class="hero error-page" id="top">
-  <div class="hero__media" aria-hidden="true">{pic(root, "chrysippos", "", eager=True, sizes="60vw")}</div>
+<section class="hero" id="top">
+  <div class="hero__media" aria-hidden="true">{pic(root, "towers", "", eager=True, sizes="60vw")}</div>
+  <div class="hero__inner">
   <div class="container">
     <div class="hero__content">
       <span class="eyebrow">Error 404</span>
@@ -214,6 +215,7 @@ def error_page():
         <a href="/contact.html"><span>Talk</span> To us</a>
       </div>
     </div>
+  </div>
   </div>
 </section>
 </main>

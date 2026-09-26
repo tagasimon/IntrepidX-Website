@@ -11,13 +11,13 @@ from PIL import Image
 OUT = Path(__file__).resolve().parent.parent / "public"
 SITE = "https://intrepidx.biz"
 META = json.load(open(Path(__file__).parent / "image-credits.json"))
-VERSION = "20260925d"
+VERSION = "20260926a"
 
 E = html.escape
 
 # ------------------------------------------------------------------ images
 
-PHOTOS = ["philosopher-head", "greek-general", "chrysippos", "ionic-column", "hand-scroll", "philosopher-bronze"]
+PHOTOS = list(META)
 
 def make_variants():
     d = OUT / "assets/img"
@@ -43,7 +43,7 @@ def pic(root, n, alt, eager=False, sizes="(max-width: 860px) 100vw, 55vw"):
 
 def credit(n):
     m = META[n]
-    return f'{m["title"]}, {m["date"]}. The Metropolitan Museum of Art, New York'
+    return f'Photo: {m["photographer"]} / Unsplash'
 
 # ------------------------------------------------------------------ data
 
@@ -156,7 +156,7 @@ def header(root, current):
   </div>
 </header>
 <div class="menu" id="site-menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
-  <div class="menu__bg" aria-hidden="true">{pic(root, "greek-general", "", sizes="46vw")}</div>
+  <div class="menu__bg" aria-hidden="true">{pic(root, "towers-2", "", sizes="46vw")}</div>
   <div class="menu__top">
     <div class="container">
       <a class="brand" href="{root}index.html" aria-label="IntrepidX Philosophy Limited, home"><img src="{root}assets/img/wordmark-reverse.png" width="350" height="72" alt="IntrepidX Philosophy Ltd"></a>
@@ -216,7 +216,7 @@ def footer(root):
   <div class="footer-bottom">
     <div class="container">
       <span>&copy; <span data-year>2026</span> IntrepidX Philosophy Limited</span>
-      <span>Sculpture photographs: The Metropolitan Museum of Art, Open Access. <a href="{root}about.html#image-credits">Image credits</a></span>
+      <span>Photographs from Unsplash. <a href="{root}about.html#image-credits">Photo credits</a></span>
     </div>
   </div>
 </footer>
@@ -228,7 +228,7 @@ def footer(root):
 def cta(root, title="Discuss an assignment",
         text="To discuss an assignment or request company documents for a tender, contact the Company Secretary, Dean Niwarinda, at dniwarinda@intrepidx.biz."):
     return f"""<section class="cta" aria-labelledby="cta-title">
-  <div class="cta__media" aria-hidden="true">{pic(root, "hand-scroll", "", sizes="100vw")}</div>
+  <div class="cta__media" aria-hidden="true">{pic(root, "meeting", "", sizes="100vw")}</div>
   <div class="container">
     <div class="cta__content" data-reveal>
       <span class="eyebrow">Contact</span>

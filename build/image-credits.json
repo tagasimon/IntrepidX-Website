@@ -1,56 +1,72 @@
 {
- "philosopher-head": {
-  "id": 252887,
-  "title": "Marble head of a philosopher",
-  "date": "1st or 2nd century CE",
-  "credit": "Funds from various donors, 1926",
-  "accession": "26.269",
-  "url": "https://www.metmuseum.org/art/collection/search/252887",
-  "public_domain": true
+ "towers": {
+  "title": "Office towers seen from street level",
+  "photographer": "Jan Weber",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1601923112035-3e4819c82317",
+  "license": "Unsplash License"
  },
- "greek-general": {
-  "id": 251493,
-  "title": "Marble head of a Greek general",
-  "date": "1st\u20132nd century CE",
-  "credit": "Fletcher Fund, 1924",
-  "accession": "24.97.32",
-  "url": "https://www.metmuseum.org/art/collection/search/251493",
-  "public_domain": true
+ "team-meeting": {
+  "title": "Colleagues in a meeting around a table",
+  "photographer": "Ninthgrid",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1739298061740-5ed03045b280",
+  "license": "Unsplash License"
  },
- "chrysippos": {
-  "id": 251787,
-  "title": "Marble portrait head of the philosopher Chrysippos",
-  "date": "1st century CE",
-  "credit": "Fletcher Fund, 1924",
-  "accession": "24.243",
-  "url": "https://www.metmuseum.org/art/collection/search/251787",
-  "public_domain": true
+ "boardroom": {
+  "title": "An empty boardroom with a long table",
+  "photographer": "Benjamin Child",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1431540015161-0bf868a2d407",
+  "license": "Unsplash License"
  },
- "ionic-column": {
-  "id": 252453,
-  "title": "Marble column from the Temple of Artemis at Sardis",
-  "date": "ca. 300 BCE",
-  "credit": "Gift of The American Society for the Excavation of Sardis, 1926",
-  "accession": "26.59.1",
-  "url": "https://www.metmuseum.org/art/collection/search/252453",
-  "public_domain": true
+ "kampala": {
+  "title": "Kampala skyline",
+  "photographer": "Michael Starkie",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1777887544354-74a7248c8a74",
+  "license": "Unsplash License"
  },
- "hand-scroll": {
-  "id": 251036,
-  "title": "Marble left hand holding a scroll",
-  "date": "1st or 2nd century CE",
-  "credit": "Rogers Fund, 1921",
-  "accession": "21.88.10",
-  "url": "https://www.metmuseum.org/art/collection/search/251036",
-  "public_domain": true
+ "analysis": {
+  "title": "Working through figures at a desk",
+  "photographer": "Scott Graham",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
+  "license": "Unsplash License"
  },
- "philosopher-bronze": {
-  "id": 248466,
-  "title": "Bronze statuette of a philosopher on a lamp stand",
-  "date": "late 1st century BCE",
-  "credit": "Rogers Fund, 1910",
-  "accession": "10.231.1",
-  "url": "https://www.metmuseum.org/art/collection/search/248466",
-  "public_domain": true
+ "documents": {
+  "title": "Two people reviewing documents at a table",
+  "photographer": "Van Tay Media",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1565688534245-05d6b5be184a",
+  "license": "Unsplash License"
+ },
+ "report": {
+  "title": "Financial report with a price chart",
+  "photographer": "Jakub Żerdzicki",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1618044733300-9472054094ee",
+  "license": "Unsplash License"
+ },
+ "kampala-dusk": {
+  "title": "Kampala at dusk",
+  "photographer": "Robin Kutesa",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1763220207281-c4d0febb61a8",
+  "license": "Unsplash License"
+ },
+ "towers-2": {
+  "title": "Office towers against the sky",
+  "photographer": "Davi Rezende",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1618353776413-57c0782c9c87",
+  "license": "Unsplash License"
+ },
+ "meeting": {
+  "title": "A team meeting in a conference room",
+  "photographer": "Beatriz Cattel",
+  "source": "Unsplash",
+  "photo": "https://images.unsplash.com/photo-1769740333462-9a63bfa914bc",
+  "license": "Unsplash License"
  }
 }

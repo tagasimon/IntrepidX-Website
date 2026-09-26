@@ -37,12 +37,11 @@ def home():
     body = f"""
 <main id="main">
 <section class="hero" id="top">
-  <div class="hero__media" aria-hidden="true">{pic(root, "philosopher-head", "", eager=True, sizes="(max-width: 860px) 100vw, 60vw")}</div>
-  <div class="hero__hatch hatch" aria-hidden="true"></div>
+  <div class="hero__media" aria-hidden="true">{pic(root, "towers", "", eager=True, sizes="(max-width: 860px) 100vw, 60vw")}</div>
   <div class="hero__inner">
     <div class="container">
       <div class="hero__content">
-        <span class="eyebrow" data-rise>IntrepidX Philosophy Limited &middot; Kampala</span>
+        <span class="eyebrow" data-rise>Consulting &middot; Kampala, Uganda</span>
         <h1 class="display-1 d1" data-rise>Information you can rely on.</h1>
         <p class="lead d2" data-rise>We are a consulting firm working for lenders, investors, development partners and governments. Our six services run from due diligence before an investment to monitoring, evaluation and impact assessment after it, with information systems and market analysis alongside.</p>
         <div class="hero__links d3" data-rise>
@@ -66,14 +65,12 @@ def home():
   <div class="container">
     <div class="split">
       <figure class="split__media" data-reveal>
-        <div class="frame">{pic(root, "philosopher-bronze", "Bronze statuette of a philosopher", sizes="(max-width: 900px) 100vw, 40vw")}</div>
-        <div class="hatch" aria-hidden="true"></div>
-        <figcaption>{E(credit("philosopher-bronze"))}</figcaption>
+        <div class="frame">{pic(root, "team-meeting", "Colleagues in a meeting around a table", sizes="(max-width: 900px) 100vw, 40vw")}</div>
       </figure>
       <div data-reveal class="d1">
         <span class="eyebrow">Who we are</span>
-        <h2 class="display-2">Philosophy, in its original sense</h2>
-        <p class="lead mt-s">The word in our name means careful reasoning about what is true. For us that means taking the time to understand the numbers, reporting them honestly, and making sure the work gets used.</p>
+        <h2 class="display-2">Independent advice, grounded in evidence</h2>
+        <p class="lead mt-s">We give lenders, investors, development partners and governments information they can act on: figures checked against source documents, findings reported plainly, and recommendations the client's own staff can put to use.</p>
         <p>IntrepidX Philosophy Limited is legally incorporated in Uganda under the Companies Act 2012. The team includes an associate professor, an evaluation specialist with a PhD, five qualified accountants, an investment manager who has passed CFA Levels I and II, a SACCO and microfinance practitioner with more than twenty years in the sector, a survey statistician, a software developer and two associate consultants.</p>
         <p class="mt-m"><a class="link-arrow" href="about.html">More about us</a></p>
       </div>
@@ -104,7 +101,7 @@ def home():
 </section>
 
 <section class="band section" aria-labelledby="why-title">
-  <div class="band__media" aria-hidden="true">{pic(root, "greek-general", "", sizes="(max-width: 900px) 100vw, 50vw")}</div>
+  <div class="band__media" aria-hidden="true">{pic(root, "boardroom", "", sizes="(max-width: 900px) 100vw, 50vw")}</div>
   <div class="container">
     <div class="band__content">
       <span class="eyebrow" data-reveal>Why work with us</span>
@@ -225,11 +222,11 @@ def steps_html():
 def about():
     root = ""
     credits = "".join(
-        f'<li><a href="{m["url"]}" rel="noopener">{E(m["title"])}</a>, {E(m["date"])}. {E(m["credit"])}, accession {E(m["accession"])}. Public domain (Open Access).</li>'
+        f'<li>{E(m["title"])}: photo by {E(m["photographer"])}</li>'
         for n, m in META.items())
     body = f"""
 <main id="main">
-{page_hero(root, "chrysippos", "Marble portrait head of the philosopher Chrysippos",
+{page_hero(root, "kampala", "Kampala skyline",
            [("index.html", "Home"), (None, "About")], "About us", "About IntrepidX",
            "IntrepidX Philosophy Limited is a consulting firm in Kampala, Uganda, with six lines of business. Each is a service in its own right, with its own lead.")}
 
@@ -291,18 +288,17 @@ def about():
   </div>
 </section>
 
-<section class="section section--ivory" id="name">
+<section class="section section--ivory" id="approach">
   <div class="container">
     <div class="split split--reverse">
       <div class="split__media" data-reveal>
         <div class="frame frame--logo"><picture><source type="image/webp" srcset="assets/img/logo-reverse.webp"><img src="assets/img/logo-reverse.png" width="520" height="418" alt="IntrepidX Philosophy Ltd logo with the line Insight. Integrity. Impact." loading="lazy"></picture></div>
-        <div class="hatch" aria-hidden="true"></div>
       </div>
       <div data-reveal class="d1">
-        <span class="eyebrow">About our name</span>
+        <span class="eyebrow">How we work</span>
         <h2 class="display-2">Insight. Integrity. Impact.</h2>
-        <p class="lead mt-s">The word philosophy in our name is used in its original sense: careful reasoning about what is true.</p>
-        <p>The line under our logo, Insight. Integrity. Impact., describes how we try to work. We take the time to understand the numbers, we report them honestly, and we make sure the work gets used.</p>
+        <p class="lead mt-s">The line under our logo describes how we work.</p>
+        <p>We take the time to understand the numbers, we report what we find, including problems a client may not want to hear, and we make sure the work gets used by the people who have to act on it.</p>
       </div>
     </div>
   </div>
@@ -378,8 +374,8 @@ def about():
         </dl>
       </div>
       <div data-reveal class="d1" id="image-credits">
-        <span class="eyebrow">Image credits</span>
-        <p class="muted">The sculpture photographs on this website come from The Metropolitan Museum of Art's Open Access programme and are in the public domain. We have tinted them to match our colours.</p>
+        <span class="eyebrow">Photo credits</span>
+        <p class="muted">The photographs on this website come from <a href="https://unsplash.com" rel="noopener">Unsplash</a> and are used under the Unsplash License. We have toned them to match our colours.</p>
         <ul class="credits">{credits}</ul>
       </div>
     </div>
@@ -406,7 +402,7 @@ def services_overview():
       </a>""" for s in SERVICES)
     body = f"""
 <main id="main">
-{page_hero(root, "ionic-column", "Marble column from the Temple of Artemis at Sardis",
+{page_hero(root, "analysis", "Working through figures at a desk",
            [("index.html", "Home"), (None, "Services")], "What we do", "Our services",
            "We have six lines of business. Each one stands on its own, with a named lead, and clients can use one or several.")}
 <section class="section section--ivory">

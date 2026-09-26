@@ -109,7 +109,7 @@ def team_page():
     mbody = "".join("<tr><td>" + n + "</td>" + "".join(f"<td>{dot(c)}</td>" for c in row) + "</tr>" for n, row in MATRIX)
     body = f"""
 <main id="main">
-{page_hero(root, "philosopher-bronze", "Bronze statuette of a philosopher",
+{page_hero(root, "documents", "Two people reviewing documents at a table",
            [("index.html", "Home"), (None, "Team")], "Our people", "Our team",
            "Short profiles of the twelve people on the IntrepidX team. Full CVs are available on request.",
            '<div class="meta"><span>Languages: <strong>English, Luganda, Runyankore, Rukiga, Rutooro, Lusoga, Kiswahili, Kinyarwanda</strong></span></div>')}

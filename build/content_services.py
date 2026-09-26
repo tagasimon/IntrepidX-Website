@@ -41,7 +41,7 @@ def service_page(slug, lead_para, intro_html, blurb, main_html, desc):
     meta = f'<div class="meta"><span>Service {s["num"]} of 06</span><span>Led by <strong>{E(s["lead"])}</strong></span></div>'
     body = f"""
 <main id="main">
-{page_hero(root, "ionic-column", "Marble column from the Temple of Artemis at Sardis",
+{page_hero(root, "analysis", "Working through figures at a desk",
            [("index.html", "Home"), ("services.html", "Services"), (None, cap(s['title']))],
            f"Service {s['num']}", E(cap(s['title'])), lead_para, meta, "display-1 display-1--long" if len(s["title"]) > 30 else "display-1")}
 <section class="section section--ivory">

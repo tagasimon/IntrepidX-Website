@@ -65,12 +65,16 @@ After you change `site.css` or `site.js`, bump `VERSION` in `build/build.py` and
 
 ## Content rules
 
-All copy comes from the approved Corporate Profile 2026. Keep the firm's own contracts separate from earlier work by individual team members. Do not add clients, figures, testimonials or awards that are not in the profile or backed by a document.
+All copy comes from the approved Corporate Profile 2026. The track record is one table under the line "Assignments carried out by IntrepidX and its consultants"; keep that line. Do not add clients, figures, testimonials or awards that are not in the profile or backed by a document.
 
 ## Contact form
 
-The site has no server-side code. The contact form opens the visitor's email app with a message to `info@intrepidx.biz` already filled in. To receive form submissions directly instead, add a form service or a small backend, and update the CSP `form-action` and `connect-src` in `nginx/security-headers.conf` to allow it.
+The site has no server-side code. The contact form opens the visitor's email app with a message to the Company Secretary, `dniwarinda@intrepidx.biz`, already filled in. Both `dniwarinda@intrepidx.biz` and `info@intrepidx.biz` appear on the site, so both mailboxes need to exist before launch. To receive form submissions directly instead, add a form service or a small backend, and update the CSP `form-action` and `connect-src` in `nginx/security-headers.conf` to allow it.
 
 ## Images
 
-The sculpture photographs come from The Metropolitan Museum of Art's Open Access collection and are public domain (CC0). They have been tinted navy to match the brand. The credits are on the About page (`about.html#image-credits`). The fonts are Newsreader, Source Sans 3 and Montserrat, all under the SIL Open Font License, and they are self-hosted in `public/assets/fonts`.
+The photographs come from Unsplash and are used under the Unsplash License (free for commercial use; credit is not required, but the site credits the photographers on the About page, `about.html#image-credits`). They are toned toward the brand navy by `build/treat.py` so pictures from different photographers sit together. `build/image-credits.json` lists each photo, its photographer and its Unsplash source.
+
+To swap a photo, download it, run `python3 build/treat.py <source.jpg> public/assets/img/<name>`, add an entry to `image-credits.json`, and regenerate with `cd build && python3 pages.py` (this also makes the 800 px versions).
+
+The fonts are Newsreader, Source Sans 3 and Montserrat, all under the SIL Open Font License, and they are self-hosted in `public/assets/fonts`.
