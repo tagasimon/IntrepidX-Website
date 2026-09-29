@@ -38,7 +38,7 @@ def service_page(slug, lead_para, intro_html, blurb, main_html, desc):
     root = "../"
     i = [s["slug"] for s in SERVICES].index(slug)
     s = SERVICES[i]
-    meta = f'<div class="meta"><span>Service {s["num"]} of 06</span><span>Led by <strong>{E(s["lead"])}</strong></span></div>'
+    meta = f'<div class="meta"><span>Service {s["num"]} of {len(SERVICES):02d}</span><span>Led by <strong>{E(s["lead"])}</strong></span></div>'
     body = f"""
 <main id="main">
 {page_hero(root, "analysis", "Working through figures at a desk",
@@ -249,4 +249,36 @@ def service_pages():
         "<p>We look at markets from the side of the investor and from the side of the SACCOs, cooperatives, farmers and households that finance and services are meant to reach.</p><p>Dickson Turyahabwe leads this work, with Shafiki Sabiiti on survey design, segmentation and analysis.</p>",
         "Principal Consultant, SMEs and Financial Inclusion. More than 20 years with SACCOs, MFIs, cooperatives and SMEs in Uganda, Rwanda and Tanzania.",
         main,
-        "Market and feasibility assessments, sector and value-chain studies, segmentation, customer and product research and policy studies, led by Dickson Turyahabwe.")
+        "Market assessments, sector and value-chain studies, segmentation, customer and product research and policy studies, led by Dickson Turyahabwe.")
+
+    # ---------------------------------------------------------- 7. Feasibility studies and strategic management
+    main = f"""
+<section class="section section--paper">
+  <div class="container">
+    <div class="offerings">
+      {offering("Feasibility and pre-feasibility studies", "Market, technical, financial, economic and legal tests of a proposed project or investment, ending in a clear view on whether and how it should go ahead.")}
+      {offering("Financial models and bankable proposals", "Cash-flow models, financial projections and scenarios, and project proposals prepared to the standard lenders and investors expect.")}
+      {offering("Strategic and business plans", "Strategic plans and business plans for institutions, programmes, SACCOs and cooperatives, with targets, budgets and an implementation plan.")}
+      {offering("Board and governance reviews", "Board composition, committees, decision-making and management structure, with an action plan and a follow-up process.")}
+      {offering("Turnaround and restructuring", "Plans for institutions and loan books under stress, from diagnosis to the steps, costs and timelines needed to recover.")}
+      {offering("Policies and strategic frameworks", "Policies and strategic plans for public bodies, drafted with stakeholders and aligned to national development plans.")}
+    </div>
+    <div class="section-head mt-l" data-reveal>
+      <span class="eyebrow">Examples from team members' earlier work</span>
+    </div>
+    {examples_table([
+        ("UNCDF and PSFU", "Pre-feasibility and feasibility studies, financial models and four bankable project proposals for Gulu and Arua, with appraisal guidelines for refugee-hosting areas (Team Leader)", "Dr. Yusuf Kiwala", "&ndash;"),
+        ("Makerere University Retirement Benefits Scheme", "Board evaluation, including a review of the corporate strategy and business model, management structure and board committees, with an action plan (Team Leader)", "Dr. Yusuf Kiwala", "2019"),
+        ("UNFPA and Ministry of Education and Sports", "School Health Policy and Strategic Plan 2012&ndash;2016: policy review, stakeholder consultation and drafting of the strategic plan (consultant)", "Dr. Yusuf Kiwala", "2012"),
+        ("Government of South Sudan", "Feasibility study for the Yirol oil project: economic and policy environment, cash flows, tax and legal framework, and financial forecasts", "Dr. Yusuf Kiwala", "2010"),
+    ])}
+    <p class="table-caption" data-reveal>{EARLIER_NOTE}</p>
+    {outputs("Feasibility study reports, financial models and bankable proposals, strategic and business plans with budgets and targets, board evaluation reports and action plans, and short briefs for boards and funders.")}
+  </div>
+</section>"""
+    service_page("feasibility-and-strategy",
+        "Before a project or an institution commits money and people, it needs to know whether the plan can work. Once it is under way, it needs a strategy its board and managers can carry out. This service covers both.",
+        "<p>We carry out feasibility studies for new projects and investments, and prepare strategic and business plans, board reviews and turnaround plans for existing organisations.</p><p>Dr. Yusuf Kiwala leads this work. His assignments include the feasibility study for the Yirol oil project in South Sudan, feasibility studies and bankable proposals for UNCDF in Gulu and Arua, and a board evaluation for the Makerere University Retirement Benefits Scheme.</p>",
+        "Principal Consultant, Impact Assessment. PhD, University of Pretoria; MBA and BCom (Finance), Makerere University.",
+        main,
+        "Feasibility and pre-feasibility studies, financial models and bankable proposals, strategic and business plans, board reviews and turnaround plans, led by Dr. Yusuf Kiwala.")

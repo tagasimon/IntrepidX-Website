@@ -10,7 +10,7 @@ PEOPLE = [
          role="Principal Consultant, Impact Assessment",
          quals="PhD, University of Pretoria. MBA and BCom (Finance), Makerere University. Diploma in Management Information Systems",
          bio="Evaluation, MIS and public finance specialist with assignments going back to 2010. For aBi he led an impact evaluation of 23 implementing partners' projects and baselines for 20 projects (2021). He was Team Leader for the integrated MIS and decision-support system of USAID's Feed the Future Water and Food Systems Activity (2024), and in 2025 advised on a jobs tracer study for FCDO's Climate Smart Jobs programme and an integrated MIS for the Mastercard Foundation-supported SIYEP programme. He has also carried out evaluations for Sida, Caritas Switzerland and CSBAG. He has filed a Ugandan patent (UG/P/2024/000009) on using machine learning to predict outbreaks of foot-and-mouth disease.",
-         areas=["Impact evaluation", "Jobs measurement", "Baselines", "M&amp;E systems", "MIS design", "Public finance assessment"]),
+         areas=["Impact evaluation", "Feasibility and strategy", "Jobs measurement", "Baselines", "M&amp;E systems", "MIS design", "Public finance assessment"]),
     dict(name="Sebyala Samuel, ACCA", initials="SS", home=True,
          role="Principal Consultant, Due Diligence and Credit Risk",
          quals="PhD student, Business Administration (Artificial Intelligence), Walsh College, USA. Master in Advanced Finance, IE Business School, Madrid. CFA Levels I and II passed. ACCA member since 2009",
@@ -64,21 +64,21 @@ PEOPLE = [
 ]
 
 # Staffing matrix from profile page 15: M = main area, S = supporting area, - = none
-MATRIX_COLS = ["Due diligence, investment appraisal and valuation", "Post-investment support", "M&amp;E", "Impact assessment", "MIS", "Market analysis",
+MATRIX_COLS = ["Due diligence, investment appraisal and valuation", "Post-investment support", "M&amp;E", "Impact assessment", "MIS", "Market analysis", "Feasibility and strategy",
                "Credit and finance", "Tax and regulatory", "Financial controls", "Training"]
 MATRIX = [
-    ("Prof. Atukunda Gershom", "--M------M"),
-    ("Dr. Yusuf Kiwala",       "S-MMMS--SS"),
-    ("Sebyala Samuel",         "MM-SSSM---"),
-    ("Dickson Turyahabwe",     "MMS-SMM-MM"),
-    ("Dean Niwarinda",         "MS---SM-S-"),
-    ("Kazooba Simon",          "----M----S"),
-    ("Shafiki Sabiiti",        "--MSSSS--S"),
-    ("Mutatinensi Dedan",      "S------MMS"),
-    ("Gilbert Flart",          "-------SM-"),
-    ("Solomon Ssekiranda",     "M-------S-"),
-    ("Tukamushaba Alvin",      "-SS----SS-"),
-    ("Mutatina Seiz",          "--S-----S-"),
+    ("Prof. Atukunda Gershom", "--M-------M"),
+    ("Dr. Yusuf Kiwala",       "S-MMMSM--SS"),
+    ("Sebyala Samuel",         "MM-SSSSM---"),
+    ("Dickson Turyahabwe",     "MMS-SMMM-MM"),
+    ("Dean Niwarinda",         "MS---S-M-S-"),
+    ("Kazooba Simon",          "----M-----S"),
+    ("Shafiki Sabiiti",        "--MSSS-S--S"),
+    ("Mutatinensi Dedan",      "S-------MMS"),
+    ("Gilbert Flart",          "--------SM-"),
+    ("Solomon Ssekiranda",     "M--------S-"),
+    ("Tukamushaba Alvin",      "-SS-----SS-"),
+    ("Mutatina Seiz",          "--S------S-"),
 ]
 
 def dot(c):

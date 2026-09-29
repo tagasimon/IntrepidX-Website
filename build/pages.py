@@ -30,7 +30,7 @@ def home():
         "email": EMAIL, "telephone": [PHONE_1_TEL, PHONE_2_TEL],
         "address": {"@type": "PostalAddress", "streetAddress": "Plot 32, Bukasa Road, Muyenga",
                     "addressLocality": "Kampala", "addressCountry": "UG"},
-        "description": "Consulting firm in Kampala: due diligence, investment appraisal and valuation; post-investment support; monitoring and evaluation; impact assessment; management information systems; market analysis.",
+        "description": "Consulting firm in Kampala: due diligence, investment appraisal and valuation; post-investment support; monitoring and evaluation; impact assessment; management information systems; market analysis; feasibility studies and strategic management.",
     }
     extra = f'<script type="application/ld+json">{json.dumps(ld)}</script>\n'
 
@@ -43,7 +43,7 @@ def home():
       <div class="hero__content">
         <span class="eyebrow" data-rise>Consulting &middot; Kampala, Uganda</span>
         <h1 class="display-1 d1" data-rise>Information you can rely on.</h1>
-        <p class="lead d2" data-rise>We are a consulting firm working for lenders, investors, development partners and governments. Our six services run from due diligence before an investment to monitoring, evaluation and impact assessment after it, with information systems and market analysis alongside.</p>
+        <p class="lead d2" data-rise>We are a consulting firm working for lenders, investors, development partners and governments. Our seven services run from feasibility studies and due diligence before an investment to monitoring, evaluation and impact assessment after it, with information systems, market analysis and strategic planning alongside.</p>
         <div class="hero__links d3" data-rise>
           <a href="about.html"><span>More</span> About who we are</a>
           <a href="services.html"><span>View</span> Our services</a>
@@ -82,7 +82,7 @@ def home():
   <div class="container">
     <div class="section-head" data-reveal>
       <span class="eyebrow">What we do</span>
-      <h2 class="display-2">Six services, each with its own lead</h2>
+      <h2 class="display-2">Seven services, each with its own lead</h2>
       <p>Each service stands on its own. Clients can use one or several, and every assignment has a named Team Leader who deals with the client and signs off the work.</p>
     </div>
     <div class="service-grid">{cards}
@@ -107,7 +107,7 @@ def home():
       <span class="eyebrow" data-reveal>Why work with us</span>
       <h2 class="display-2" id="why-title" data-reveal>What the team brings</h2>
       <ol class="reasons">
-        <li data-reveal><div><h3>A lead for each service</h3><p>Each of our six services has a named lead, drawn from Sebyala Samuel, Dickson Turyahabwe, Prof. Atukunda Gershom, Dr. Yusuf Kiwala and Kazooba Simon.</p></div></li>
+        <li data-reveal><div><h3>A lead for each service</h3><p>Each of our seven services has a named lead, drawn from Sebyala Samuel, Dickson Turyahabwe, Prof. Atukunda Gershom, Dr. Yusuf Kiwala and Kazooba Simon.</p></div></li>
         <li data-reveal><div><h3>Experience on both sides of a loan</h3><p>An investment manager who has made and monitored loans for impact investors, and a practitioner who has run a SACCO and trained the staff who lend to small borrowers.</p></div></li>
         <li data-reveal><div><h3>Qualified accountants</h3><p>Five of the team are qualified accountants (CPA or ACCA) and one is also a certified tax adviser. Our credit lead has passed CFA Levels I and II.</p></div></li>
         <li data-reveal><div><h3>Evaluation and research depth</h3><p>An associate professor, an evaluation specialist with a PhD and a survey statistician, with work for USAID, FCDO, the Mastercard Foundation, UNCDF, Sida, GIZ and aBi programmes.</p></div></li>
@@ -176,7 +176,7 @@ def home():
     <div class="section-head" data-reveal>
       <span class="eyebrow">Our people</span>
       <h2 class="display-2">Who leads the work</h2>
-      <p>The Managing Director, the Company Secretary and the leads of our six services. Twelve people in all, with full CVs available on request.</p>
+      <p>The Managing Director, the Company Secretary and the leads of our seven services. Twelve people in all, with full CVs available on request.</p>
     </div>
     <div class="people-grid">{people}
     </div>
@@ -198,7 +198,7 @@ def home():
 </main>
 """
     write("index.html", head(root, "index.html", "IntrepidX Philosophy Limited | Consulting, Kampala",
-                             "IntrepidX Philosophy Limited is a consulting firm in Kampala, Uganda: due diligence, investment appraisal and valuation; post-investment support; monitoring and evaluation; impact assessment; management information systems; and market analysis.",
+                             "IntrepidX Philosophy Limited is a consulting firm in Kampala, Uganda: due diligence, investment appraisal and valuation; post-investment support; monitoring and evaluation; impact assessment; management information systems; market analysis; and feasibility studies and strategic management.",
                              extra) + header(root, "index.html") + body + footer(root))
 
 
@@ -228,16 +228,16 @@ def about():
 <main id="main">
 {page_hero(root, "kampala", "Kampala skyline",
            [("index.html", "Home"), (None, "About")], "About us", "About IntrepidX",
-           "IntrepidX Philosophy Limited is a consulting firm in Kampala, Uganda, with six lines of business. Each is a service in its own right, with its own lead.")}
+           "IntrepidX Philosophy Limited is a consulting firm in Kampala, Uganda, with seven lines of business. Each is a service in its own right, with its own lead.")}
 
 <section class="section section--ivory">
   <div class="container">
     <div class="intro-grid">
       <div data-reveal>
         <span class="eyebrow">Who we are</span>
-        <h2 class="display-2">Experienced people, six services</h2>
+        <h2 class="display-2">Experienced people, seven services</h2>
         <div class="prose mt-s">
-          <p>Our six lines of business are due diligence, investment appraisal and valuation; post-investment support; monitoring and evaluation; impact assessment; management information systems; and market analysis. Our work is aimed at lenders and investors, development partners and the programmes they fund, government bodies, and financial institutions such as SACCOs and microfinance institutions.</p>
+          <p>Our seven lines of business are due diligence, investment appraisal and valuation; post-investment support; monitoring and evaluation; impact assessment; management information systems; market analysis; and feasibility studies and strategic management. Our work is aimed at lenders and investors, development partners and the programmes they fund, government bodies, and financial institutions such as SACCOs and microfinance institutions.</p>
           <p>IntrepidX is legally incorporated in Uganda under the Companies Act 2012. The Managing Director, Prof. Atukunda Gershom, is an associate professor with a PhD in development studies and a postgraduate diploma in monitoring and evaluation. The team also includes an evaluation specialist with a PhD, five qualified accountants (CPA and ACCA, one also a certified tax adviser), an investment manager who has passed CFA Levels I and II, a SACCO and microfinance practitioner with more than twenty years in the sector, a survey statistician, a software developer and two associate consultants.</p>
           <p>Our <a href="work.html">track record</a> lists more than 50 assignments by the firm and our consultants, for clients including the Mastercard Foundation, FCDO, USAID, UNCDF, UNDP, UNFPA, Sida, Enabel, IOM, Oikocredit, aBi, World Bank-funded projects, government bodies, SACCOs and cooperatives, and the impact investors Global Social Impact Fund in Spain, the Segal Family Foundation in New Jersey and Kampani in Belgium.</p>
           <p>Projects include more than 20 due diligence assignments for Kampani, loan monitoring for more than 15 companies in GSIF's East African portfolio, delinquency management with 15 of aBi Finance's Tier IV partners, an integrated MIS for the Mastercard Foundation's SIYEP programme, a jobs tracer study for FCDO, groundwater financing for SIWI and UNCDF, and a sub-national PEFA assessment.</p>
@@ -267,7 +267,7 @@ def about():
   <div class="container">
     <div class="vm">
       <div data-reveal><h2>Vision</h2><p>Investment, programme and public spending decisions in Africa that rest on reliable, checked information.</p></div>
-      <div data-reveal class="d1"><h2>Mission</h2><p>To give lenders, investors, development partners and governments information they can rely on, through careful due diligence and valuation, practical support after investment, honest monitoring, evaluation and impact assessment, information systems that people use, and sound market analysis.</p></div>
+      <div data-reveal class="d1"><h2>Mission</h2><p>To give lenders, investors, development partners and governments information they can rely on, through careful due diligence and valuation, practical support after investment, honest monitoring, evaluation and impact assessment, information systems that people use, sound market analysis, and feasibility studies and strategies built on evidence.</p></div>
     </div>
   </div>
 </section>
@@ -404,7 +404,7 @@ def services_overview():
 <main id="main">
 {page_hero(root, "analysis", "Working through figures at a desk",
            [("index.html", "Home"), (None, "Services")], "What we do", "Our services",
-           "We have six lines of business. Each one stands on its own, with a named lead, and clients can use one or several.")}
+           "We have seven lines of business. Each one stands on its own, with a named lead, and clients can use one or several.")}
 <section class="section section--ivory">
   <div class="container">
     <div class="service-rows">{rows}
@@ -435,7 +435,7 @@ def services_overview():
 </main>
 """
     write("services.html", head(root, "services.html", "Our services",
-                                "Six stand-alone services: due diligence, investment appraisal and valuation; post-investment support; monitoring and evaluation; impact assessment; management information systems; and market analysis.")
+                                "Seven stand-alone services: due diligence, investment appraisal and valuation; post-investment support; monitoring and evaluation; impact assessment; management information systems; market analysis; and feasibility studies and strategic management.")
           + header(root, "services.html") + body + footer(root))
 
 

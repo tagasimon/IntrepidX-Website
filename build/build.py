@@ -11,7 +11,7 @@ from PIL import Image
 OUT = Path(__file__).resolve().parent.parent / "public"
 SITE = "https://intrepidx.biz"
 META = json.load(open(Path(__file__).parent / "image-credits.json"))
-VERSION = "20260926a"
+VERSION = "20260929a"
 
 E = html.escape
 
@@ -56,8 +56,8 @@ POBOX = "P.O. Box 186072, Kampala, Uganda"
 SERVICES = [
     dict(slug="due-diligence", num="01",
          title="Due diligence, investment appraisal and valuation",
-         short="Financial, commercial, governance, legal and technical due diligence, feasibility studies, financial models and business valuations.",
-         covers="Financial, commercial, governance, legal and technical due diligence; feasibility studies and financial models; business valuations, collateral assessment and valuation reviews.",
+         short="Financial, commercial, governance, legal and technical due diligence, investment appraisal, financial models and business valuations.",
+         covers="Financial, commercial, governance, legal and technical due diligence; investment appraisal and financial models; business valuations, collateral assessment and valuation reviews.",
          lead="Sebyala Samuel", initials="SS", lead_role="Principal Consultant, Due Diligence and Credit Risk"),
     dict(slug="post-investment-support", num="02",
          title="Post-investment support",
@@ -81,9 +81,14 @@ SERVICES = [
          lead="Kazooba Simon", initials="KS", lead_role="Head of Management Information Systems"),
     dict(slug="market-analysis", num="06",
          title="Market analysis",
-         short="Market and feasibility assessments, sector and value-chain studies, segmentation, customer and product research, and policy and trade studies.",
-         covers="Market and feasibility assessments, sector and value-chain studies, market segmentation, customer and product research, and policy and trade studies.",
+         short="Market assessments, sector and value-chain studies, segmentation, customer and product research, and policy and trade studies.",
+         covers="Market assessments, sector and value-chain studies, market segmentation, customer and product research, and policy and trade studies.",
          lead="Dickson Turyahabwe", initials="DT", lead_role="Principal Consultant, SMEs and Financial Inclusion"),
+    dict(slug="feasibility-and-strategy", num="07",
+         title="Feasibility studies and strategic management",
+         short="Feasibility and pre-feasibility studies, financial models and bankable proposals, strategic and business plans, board reviews and turnaround plans.",
+         covers="Feasibility and pre-feasibility studies, financial models and bankable proposals, strategic and business plans, board and governance reviews, and turnaround plans.",
+         lead="Dr. Yusuf Kiwala", initials="YK", lead_role="Principal Consultant, Impact Assessment"),
 ]
 SVC = {s["slug"]: s for s in SERVICES}
 
