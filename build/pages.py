@@ -71,7 +71,7 @@ def home():
         <span class="eyebrow">Who we are</span>
         <h2 class="display-2">Independent advice, grounded in evidence</h2>
         <p class="lead mt-s">We give lenders, investors, development partners and governments information they can act on: figures checked against source documents, findings reported plainly, and recommendations the client's own staff can put to use.</p>
-        <p>IntrepidX Philosophy Limited is legally incorporated in Uganda under the Companies Act 2012. The team includes an associate professor, an evaluation specialist with a PhD, five qualified accountants, an investment manager who has passed CFA Levels I and II, a SACCO and microfinance practitioner with more than twenty years in the sector, a survey statistician, a software developer and two associate consultants.</p>
+        <p>IntrepidX Philosophy Limited is legally incorporated in Uganda under the Companies Act 2012. The team includes an associate professor, an evaluation specialist with a PhD, four qualified accountants, an investment manager who has passed CFA Levels I and II, a survey statistician, a software developer and two associate consultants.</p>
         <p class="mt-m"><a class="link-arrow" href="about.html">More about us</a></p>
       </div>
     </div>
@@ -107,12 +107,12 @@ def home():
       <span class="eyebrow" data-reveal>Why work with us</span>
       <h2 class="display-2" id="why-title" data-reveal>What the team brings</h2>
       <ol class="reasons">
-        <li data-reveal><div><h3>A lead for each service</h3><p>Each of our seven services has a named lead, drawn from Sebyala Samuel, Dickson Turyahabwe, Prof. Atukunda Gershom, Dr. Yusuf Kiwala and Kazooba Simon.</p></div></li>
-        <li data-reveal><div><h3>Experience on both sides of a loan</h3><p>An investment manager who has made and monitored loans for impact investors, and a practitioner who has run a SACCO and trained the staff who lend to small borrowers.</p></div></li>
-        <li data-reveal><div><h3>Qualified accountants</h3><p>Five of the team are qualified accountants (CPA or ACCA) and one is also a certified tax adviser. Our credit lead has passed CFA Levels I and II.</p></div></li>
+        <li data-reveal><div><h3>A lead for each service</h3><p>Each of our seven services has a named lead, drawn from Sebyala Samuel, Prof. Atukunda Gershom, Dr. Yusuf Kiwala, Kazooba Simon and Shafiki Sabiiti.</p></div></li>
+        <li data-reveal><div><h3>Experience on both sides of a loan</h3><p>An investment manager who has made and monitored loans for impact investors, and accountants who have run the finances of companies and donor-funded projects.</p></div></li>
+        <li data-reveal><div><h3>Qualified accountants</h3><p>Four of the team are qualified accountants (CPA or ACCA) and one is also a certified tax adviser. Our credit lead has passed CFA Levels I and II.</p></div></li>
         <li data-reveal><div><h3>Evaluation and research depth</h3><p>An associate professor, an evaluation specialist with a PhD and a survey statistician, with work for USAID, FCDO, the Mastercard Foundation, UNCDF, Sida, GIZ and aBi programmes.</p></div></li>
         <li data-reveal><div><h3>Our own software developer</h3><p>We can design an information system and also build, connect and support the software, so recommendations turn into tools people use.</p></div></li>
-        <li data-reveal><div><h3>Local knowledge</h3><p>We know Uganda's lenders, SACCOs, cooperatives and public bodies well, and our team has worked in Kenya, Rwanda, Tanzania, South Sudan and further afield.</p></div></li>
+        <li data-reveal><div><h3>Local knowledge</h3><p>We know Uganda's lenders, SACCOs and public bodies well, and our team has worked in Kenya, Rwanda, South Sudan and further afield.</p></div></li>
       </ol>
     </div>
   </div>
@@ -166,7 +166,7 @@ def home():
         <span class="tag">Due diligence and post-investment support</span>
       </article>
     </div>
-    <div class="note" data-reveal>Our track record lists more than 50 assignments by the firm and our consultants, for clients including the Mastercard Foundation, FCDO, USAID, UNCDF, UNDP, UNFPA, Sida, Enabel, IOM, Oikocredit, aBi and World Bank-funded projects.</div>
+    <div class="note" data-reveal>Our track record lists 35 assignments by the firm and our consultants, for clients including the Mastercard Foundation, FCDO, USAID, UNCDF, UNDP, UNFPA, Sida, aBi and World Bank-funded projects.</div>
     <p class="mt-m" data-reveal><a class="link-arrow" href="work.html">See the full track record</a></p>
   </div>
 </section>
@@ -176,7 +176,7 @@ def home():
     <div class="section-head" data-reveal>
       <span class="eyebrow">Our people</span>
       <h2 class="display-2">Who leads the work</h2>
-      <p>The Managing Director, the Company Secretary and the leads of our seven services. Twelve people in all, with full CVs available on request.</p>
+      <p>The Managing Director, the Company Secretary and the leads of our seven services. Eleven people in all, with full CVs available on request.</p>
     </div>
     <div class="people-grid">{people}
     </div>
@@ -238,8 +238,8 @@ def about():
         <h2 class="display-2">Experienced people, seven services</h2>
         <div class="prose mt-s">
           <p>Our seven lines of business are due diligence, investment appraisal and valuation; post-investment support; monitoring and evaluation; impact assessment; management information systems; market analysis; and feasibility studies and strategic management. Our work is aimed at lenders and investors, development partners and the programmes they fund, government bodies, and financial institutions such as SACCOs and microfinance institutions.</p>
-          <p>IntrepidX is legally incorporated in Uganda under the Companies Act 2012. The Managing Director, Prof. Atukunda Gershom, is an associate professor with a PhD in development studies and a postgraduate diploma in monitoring and evaluation. The team also includes an evaluation specialist with a PhD, five qualified accountants (CPA and ACCA, one also a certified tax adviser), an investment manager who has passed CFA Levels I and II, a SACCO and microfinance practitioner with more than twenty years in the sector, a survey statistician, a software developer and two associate consultants.</p>
-          <p>Our <a href="work.html">track record</a> lists more than 50 assignments by the firm and our consultants, for clients including the Mastercard Foundation, FCDO, USAID, UNCDF, UNDP, UNFPA, Sida, Enabel, IOM, Oikocredit, aBi, World Bank-funded projects, government bodies, SACCOs and cooperatives, and the impact investors Global Social Impact Fund in Spain, the Segal Family Foundation in New Jersey and Kampani in Belgium.</p>
+          <p>IntrepidX is legally incorporated in Uganda under the Companies Act 2012. The Managing Director, Prof. Atukunda Gershom, is an associate professor with a PhD in development studies and a postgraduate diploma in monitoring and evaluation. The team also includes an evaluation specialist with a PhD, four qualified accountants (CPA and ACCA, one also a certified tax adviser), an investment manager who has passed CFA Levels I and II, a survey statistician, a software developer and two associate consultants.</p>
+          <p>Our <a href="work.html">track record</a> lists 35 assignments by the firm and our consultants, for clients including the Mastercard Foundation, FCDO, USAID, UNCDF, UNDP, UNFPA, Sida, aBi, World Bank-funded projects, government bodies, Tier IV financial institutions, and the impact investors Global Social Impact Fund in Spain, the Segal Family Foundation in New Jersey and Kampani in Belgium.</p>
           <p>Projects include more than 20 due diligence assignments for Kampani, loan monitoring for more than 15 companies in GSIF's East African portfolio, delinquency management with 15 of aBi Finance's Tier IV partners, an integrated MIS for the Mastercard Foundation's SIYEP programme, a jobs tracer study for FCDO, groundwater financing for SIWI and UNCDF, and a sub-national PEFA assessment.</p>
         </div>
       </div>
@@ -369,7 +369,7 @@ def about():
           <dt>Postal address</dt><dd>{E(POBOX)}</dd>
           <dt>Telephone</dt><dd><a href="tel:{PHONE_1_TEL}">{PHONE_1}</a> / <a href="tel:{PHONE_2_TEL}">{PHONE_2}</a></dd>
           <dt>Email</dt><dd><a href="mailto:{EMAIL}">{EMAIL}</a></dd>
-          <dt>Professional bodies</dt><dd>Team members belong to ICPAU, ICPAR and ACCA</dd>
+          <dt>Professional bodies</dt><dd>Team members belong to ICPAU and ACCA</dd>
           <dt>Commitments</dt><dd>Our proposals include signed declarations on confidentiality, fraud and corruption, conflicts of interest, and data protection</dd>
         </dl>
       </div>

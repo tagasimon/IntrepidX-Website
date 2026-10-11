@@ -14,13 +14,8 @@ PEOPLE = [
     dict(name="Sebyala Samuel, ACCA", initials="SS", home=True,
          role="Principal Consultant, Due Diligence and Credit Risk",
          quals="PhD student, Business Administration (Artificial Intelligence), Walsh College, USA. Master in Advanced Finance, IE Business School, Madrid. CFA Levels I and II passed. ACCA member since 2009",
-         bio="Investment manager with more than 12 years' experience and over US$150 million of private-sector debt and equity transactions in 15 African and 2 European markets. Since 2023 he has been Distressed Debt Turnaround Strategist with the Uganda Bankers Association. For the Segal Family Foundation (2022&ndash;2023) he carried out credit due diligence on more than 45 social enterprises and impact funds. With PCP since 2021, he has managed a US$25 million SME credit portfolio with portfolio at risk below 3% and structured more than 12 credit guarantee facilities with IFC, GuarantCo, Old Mutual and Mastercard. He leads our due diligence, appraisal and valuation work and is Team Leader on the aBi Finance assignment.",
+         bio="Investment manager with more than 12 years' experience and over US$150 million of private-sector debt and equity transactions in 15 African and 2 European markets. Since 2023 he has been Distressed Debt Turnaround Strategist with the Uganda Bankers Association. For the Segal Family Foundation (2022&ndash;2023) he carried out credit due diligence on more than 45 social enterprises and impact funds. With PCP since 2021, he has managed a US$25 million SME credit portfolio with portfolio at risk below 3% and structured more than 12 credit guarantee facilities with IFC, GuarantCo, Old Mutual and Mastercard. He leads our due diligence and post-investment support work and is Team Leader on the aBi Finance assignment.",
          areas=["Due diligence", "Credit risk", "Valuation", "Deal structuring", "Distressed debt"]),
-    dict(name="Dickson Turyahabwe, CPA", initials="DT", home=True,
-         role="Principal Consultant, SMEs and Financial Inclusion",
-         quals="CPA, member of ICPAU and ICPAR. MBA, University of East London. BCom (Accounting), Makerere University. Certified Microfinance Trainer",
-         bio="More than 20 years with SACCOs, MFIs, cooperatives and SMEs in Uganda, Rwanda and Tanzania. He was the first General Manager of Wazalendo SACCO, where portfolio at risk stayed below 2%, and earlier worked at UCSCU and on the USAID-funded WOCCU SACCONet project. He is Managing Partner of Dickson Associates and developed the SACCO financial diagnostic tool used under the IFAD-funded Rural Financial Services Programme. Recent clients include AMIR, Cordaid Rwanda, Mercy Corps and IOM, UNDP, Enabel and Oikocredit. He leads our post-investment support and market analysis work and is Delinquency Management Expert on the aBi Finance assignment.",
-         areas=["SACCO and MFI strengthening", "SME support", "Market assessment", "Credit management", "Training"]),
     dict(name="Dean Niwarinda", initials="DN", home=True,
          role="Senior Investment Analyst, Company Secretary and Lead, Investment Analysis",
          quals="MBA (Finance) and BCom (Finance), Makerere University. CPA candidate, ICPAU",
@@ -31,10 +26,10 @@ PEOPLE = [
          quals="BSc Computer Science, Makerere University. Certificates in API design, Google Cloud database administration and Django",
          bio="Applications developer and solutions architect with more than ten years of experience designing, building and supporting business systems in manufacturing, hospitality and services. He is a Director of Elastic Technologies Ltd. At Mulwana Group he extended Microsoft Dynamics 365 Business Central and SAP through APIs and moved databases to Google Cloud. He uses Power BI and R for analysis and forecasting. He leads our MIS work and is MIS and Portfolio Analytics Specialist on the aBi Finance assignment.",
          areas=[]),
-    dict(name="Shafiki Sabiiti", initials="SS", home=False,
+    dict(name="Shafiki Sabiiti", initials="SS", home=True,
          role="Statistician and Data Analyst",
          quals="BSc Statistics, Makerere University. MSc Statistics (in progress), Makerere University. Postgraduate Diploma in M&amp;E (in progress), Uganda Management Institute",
-         bio="He has worked on surveys, M&amp;E and data since 2019. His work includes nationwide surveys for the Uganda Revenue Authority and the Ministry of Gender, Labour and Social Development; baselines and evaluations for aBi, GIZ and Mastercard Foundation-funded programmes, among them SIYEP and Enhancing Youth Employment in Coffee; and monitoring and market analysis for USAID-funded activities. As Systems Analyst at Real People Financial Services (since 2023) he built a machine-learning credit-scoring application and a system for managing written-off loans.",
+         bio="He has worked on surveys, M&amp;E and data since 2019. His work includes nationwide surveys for the Uganda Revenue Authority and the Ministry of Gender, Labour and Social Development; baselines and evaluations for aBi, GIZ and Mastercard Foundation-funded programmes, among them SIYEP and Enhancing Youth Employment in Coffee; and monitoring and market analysis for USAID-funded activities. As Systems Analyst at Real People Financial Services (since 2023) he built a machine-learning credit-scoring application and a system for managing written-off loans. He leads our market analysis work.",
          areas=[]),
     dict(name="Mutatinensi Dedan, CPA, ACCA, CTA", initials="MD", home=False,
          role="Tax and Regulatory Compliance Consultant",
@@ -70,10 +65,9 @@ MATRIX = [
     ("Prof. Atukunda Gershom", "--M-------M"),
     ("Dr. Yusuf Kiwala",       "S-MMMSM--SS"),
     ("Sebyala Samuel",         "MM-SSSSM---"),
-    ("Dickson Turyahabwe",     "MMS-SMMM-MM"),
     ("Dean Niwarinda",         "MS---S-M-S-"),
     ("Kazooba Simon",          "----M-----S"),
-    ("Shafiki Sabiiti",        "--MSSS-S--S"),
+    ("Shafiki Sabiiti",        "--MSSM-S--S"),
     ("Mutatinensi Dedan",      "S-------MMS"),
     ("Gilbert Flart",          "--------SM-"),
     ("Solomon Ssekiranda",     "M--------S-"),
@@ -111,8 +105,8 @@ def team_page():
 <main id="main">
 {page_hero(root, "documents", "Two people reviewing documents at a table",
            [("index.html", "Home"), (None, "Team")], "Our people", "Our team",
-           "Short profiles of the twelve people on the IntrepidX team. Full CVs are available on request.",
-           '<div class="meta"><span>Languages: <strong>English, Luganda, Runyankore, Rukiga, Rutooro, Lusoga, Kiswahili, Kinyarwanda</strong></span></div>')}
+           "Short profiles of the eleven people on the IntrepidX team. Full CVs are available on request.",
+           '<div class="meta"><span>Languages: <strong>English, Luganda, Runyankore, Rukiga, Rutooro, Lusoga, Kiswahili</strong></span></div>')}
 <section class="section section--ivory">
   <div class="container">{profiles}
   </div>
@@ -133,5 +127,5 @@ def team_page():
 </main>
 """
     write("team.html", head(root, "team.html", "Our team",
-                            "The twelve people on the IntrepidX team: evaluators, qualified accountants, an investment manager, a SACCO and microfinance practitioner, a statistician, a software developer and two associate consultants.")
+                            "The eleven people on the IntrepidX team: evaluators, qualified accountants, an investment manager, a statistician, a software developer and two associate consultants.")
           + header(root, "team.html") + body + footer(root))

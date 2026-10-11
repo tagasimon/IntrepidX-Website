@@ -1,6 +1,6 @@
 from build import *
 
-ANCHORS = {"Sebyala Samuel": "sebyala-samuel", "Dickson Turyahabwe": "dickson-turyahabwe", "Prof. Atukunda Gershom": "prof-atukunda-gershom", "Dr. Yusuf Kiwala": "dr-yusuf-kiwala", "Kazooba Simon": "kazooba-simon"}
+ANCHORS = {"Shafiki Sabiiti": "shafiki-sabiiti", "Sebyala Samuel": "sebyala-samuel", "Prof. Atukunda Gershom": "prof-atukunda-gershom", "Dr. Yusuf Kiwala": "dr-yusuf-kiwala", "Kazooba Simon": "kazooba-simon"}
 
 EARLIER_NOTE = "The examples on this page come from work by members of our team, before joining IntrepidX or alongside it. They were not IntrepidX contracts."
 
@@ -96,7 +96,6 @@ def service_pages():
     </div>
     {examples_table([
         ("UNCDF", "Guidelines for identifying and appraising income-generating projects in refugee-hosting areas, with bankable proposals and a financial model for each project in Gulu and Arua (Team Leader)", "Dr. Yusuf Kiwala", "&ndash;"),
-        ("Mercy Corps and IOM", "Market assessment, financial model and business plan for a proposed e-waste cooperative in Bidi Bidi settlement (Team Leader)", "Dickson Turyahabwe", "2025"),
         ("Iungo Capital (as Investment Manager)", "Debt sizing and risk-adjusted return modelling for US$12 million of SME debt and equity transactions", "Sebyala Samuel", "2018&ndash;2020"),
         ("Government of South Sudan", "Feasibility study for the Yirol oil project", "Dr. Yusuf Kiwala", "2010"),
     ])}
@@ -120,19 +119,19 @@ def service_pages():
       {offering("Portfolio reviews", "Periodic reviews of how an investment, a credit line or a whole portfolio is performing against plan: financial results, repayment, portfolio at risk, covenant compliance and progress on agreed actions.",
                 "Sebyala Samuel has managed a US$25 million SME credit portfolio with portfolio at risk below 3% and, in an earlier role, introduced automated credit monitoring tools.")}
       {offering("Support to investees and partner institutions", "Practical help for the businesses, SACCOs and microfinance institutions that receive finance: credit and arrears management, financial management and internal controls, governance and board training, and business plans.",
-                "Our delinquency management assignment is this kind of work: aBi Finance provides credit lines and guarantees to financial institutions, and we are helping 15 of them bring loan arrears under control (<a href='../work.html#case-delinquency'>ongoing assignments</a>). Dickson Turyahabwe has provided business development services to cooperatives under USAID/TechnoServe and Oikocredit programmes and built capacity in Oikocredit partner institutions.")}
+                "Our delinquency management assignment is this kind of work: aBi Finance provides credit lines and guarantees to financial institutions, and we are helping 15 of them bring loan arrears under control (<a href='../work.html#case-delinquency'>ongoing assignments</a>).")}
       {offering("Turnaround and recovery", "When an investment runs into trouble: finding the causes, restructuring options, recovery plans for non-performing loans, and follow-up until the plan is working.",
-                "Sebyala Samuel has worked on turnaround strategies for distressed loans with the Uganda Bankers Association since 2023. Dickson Turyahabwe worked on a national turnaround strategy for cooperatives for the Ministry of Trade, Industry and Cooperatives (2022).")}
+                "Sebyala Samuel has worked on turnaround strategies for distressed loans with the Uganda Bankers Association since 2023.")}
     </div>
     {outputs("Monitoring reports with early-warning indicators, portfolio reviews, action plans for each institution, training and coaching, recovery plans, and a close-out report against the baseline.")}
   </div>
 </section>"""
     service_page("post-investment-support",
         "Once the money has gone out, the lender or investor needs regular, independent information on how the investment is doing, and the business or institution that received it often needs practical help to use it well. We do both.",
-        "<p>We provide this support whether or not we carried out the original due diligence.</p><p>Dickson Turyahabwe leads this work. He has more than 20 years with SACCOs, MFIs, cooperatives and SMEs in Uganda, Rwanda and Tanzania, and was the first General Manager of Wazalendo SACCO, where portfolio at risk stayed below 2%.</p>",
-        "Principal Consultant, SMEs and Financial Inclusion. CPA, member of ICPAU and ICPAR; MBA, University of East London; Certified Microfinance Trainer.",
+        "<p>We provide this support whether or not we carried out the original due diligence.</p><p>Sebyala Samuel leads this work. He has managed a US$25 million SME credit portfolio with portfolio at risk below 3% and, since 2023, has worked on turnaround strategies for distressed loans with the Uganda Bankers Association.</p>",
+        "Principal Consultant, Due Diligence and Credit Risk. ACCA member; Master in Advanced Finance, IE Business School; passed CFA Levels I and II.",
         main,
-        "Monitoring of borrowers and investees, portfolio reviews, support to the institutions that receive finance, and turnaround and recovery, led by Dickson Turyahabwe.")
+        "Monitoring of borrowers and investees, portfolio reviews, support to the institutions that receive finance, and turnaround and recovery, led by Sebyala Samuel.")
 
     # ---------------------------------------------------------- 3. M&E
     main = f"""
@@ -140,9 +139,9 @@ def service_pages():
   <div class="container">
     <p class="note mt-0" data-reveal>{EARLIER_NOTE}</p>
     <div class="offerings mt-m">
-      {offering("Baseline studies", "Setting indicator values and checking that targets are realistic. Examples include baselines for 20 aBi-funded projects, for USAID's Water and Food Systems Activity, and a profile of 250 village savings and loan associations for the PROFIRA project.")}
+      {offering("Baseline studies", "Setting indicator values and checking that targets are realistic. Examples include baselines for 20 aBi-funded projects and for USAID's Water and Food Systems Activity.")}
       {offering("M&E frameworks and systems", "Theories of change, log frames, indicator definitions and M&amp;E plans, for example for the DINU programme (Office of the Prime Minister) and a joint log frame for NAADS and NARO.")}
-      {offering("Mid-term and end-line evaluations", "Including an evaluation of Local Government Public Accounts Committees in 30 districts, an end-of-project evaluation in West Nile, and the end-line evaluation of 20 aBi value-chain and financial-services projects.")}
+      {offering("Mid-term and end-line evaluations", "Including an evaluation of Local Government Public Accounts Committees in 30 districts and the end-line evaluation of 20 aBi value-chain and financial-services projects.")}
       {offering("Public sector performance", "A sub-national PEFA assessment, a sub-national credit rating, and a review of financial management arrangements in 20 World Bank-funded projects.")}
       {offering("Surveys and data collection", "Sampling, digital questionnaires (ODK, Kobo Toolbox, SurveyCTO), enumerator training and back-checks, including nationwide client-satisfaction surveys for URA and the Ministry of Gender, Labour and Social Development.")}
       {offering("Organisational capacity assessment", "Reviews of how well an organisation plans, monitors and reports, with a practical plan to close the gaps.")}
@@ -192,7 +191,7 @@ def service_pages():
       {offering("Software development and integration", "Web and mobile applications, APIs, integration with ERP systems such as Microsoft Dynamics 365 Business Central and SAP, and moving databases to the cloud.")}
       {offering("Dashboards and reporting", "Power BI and R analysis, portfolio-at-risk dashboards, and dashboards that track programme performance.")}
       {offering("Data collection", "Mobile and digital data capture, with automatic checks, used across several implementing partners at once.")}
-      {offering("Financial reporting tools", "An accounting and reporting tool for lower local governments and service units, and an assessment of the accounting software used by SACCOs.")}
+      {offering("Financial reporting tools", "An accounting and reporting tool for lower local governments and service units.")}
       {offering("Credit and portfolio tools", "Arrears ageing, early-warning and recovery tracking; automated credit monitoring; a machine-learning credit-scoring application and a system for managing written-off loans.")}
       {offering("Manuals, training and support", "User manuals, standard operating procedures, training of trainers, and support after the system goes live.")}
     </div>
@@ -237,8 +236,6 @@ def service_pages():
     {examples_table([
         ("USAID", "Data analysis and market segmentation to identify sanitation markets in Teso, Karamoja, Acholi, Lango, Sebei and Bugisu, and input to a market scorecard (statistician)", "Shafiki Sabiiti", "2024"),
         ("AESA East Africa", "Assessment of agricultural trade and market policies in IGAD member states (research associate)", "Shafiki Sabiiti", "2025"),
-        ("Mercy Corps and IOM", "Market assessment, financial model and business plan for a proposed e-waste cooperative in Bidi Bidi settlement (Team Leader)", "Dickson Turyahabwe", "2025"),
-        ("UCCFS (funded by WE EFFECT)", "Market research and new savings, loan and micro-insurance products for member SACCOs (Team Leader)", "Dickson Turyahabwe", "2015"),
     ])}
     <p class="table-caption" data-reveal>{EARLIER_NOTE}</p>
     {outputs("Market assessment reports, segmentation and demand estimates, financial models and business plans, product designs, and short briefs for management or the board.")}
@@ -246,10 +243,10 @@ def service_pages():
 </section>"""
     service_page("market-analysis",
         "Market analysis earns its cost when it changes a decision about a product, a price, a new market or a partner.",
-        "<p>We look at markets from the side of the investor and from the side of the SACCOs, cooperatives, farmers and households that finance and services are meant to reach.</p><p>Dickson Turyahabwe leads this work, with Shafiki Sabiiti on survey design, segmentation and analysis.</p>",
-        "Principal Consultant, SMEs and Financial Inclusion. More than 20 years with SACCOs, MFIs, cooperatives and SMEs in Uganda, Rwanda and Tanzania.",
+        "<p>We look at markets from the side of the investor and from the side of the SACCOs, cooperatives, farmers and households that finance and services are meant to reach.</p><p>Shafiki Sabiiti leads this work, with Sebyala Samuel on how finance is priced and structured.</p>",
+        "Statistician and Data Analyst. BSc Statistics, Makerere University; market segmentation and trade-policy research for USAID and AESA East Africa.",
         main,
-        "Market assessments, sector and value-chain studies, segmentation, customer and product research and policy studies, led by Dickson Turyahabwe.")
+        "Market assessments, sector and value-chain studies, segmentation, customer and product research and policy studies, led by Shafiki Sabiiti.")
 
     # ---------------------------------------------------------- 7. Feasibility studies and strategic management
     main = f"""

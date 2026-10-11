@@ -11,7 +11,7 @@ from PIL import Image
 OUT = Path(__file__).resolve().parent.parent / "public"
 SITE = "https://intrepidx.biz"
 META = json.load(open(Path(__file__).parent / "image-credits.json"))
-VERSION = "20260929a"
+VERSION = "20261011a"
 
 E = html.escape
 
@@ -63,7 +63,7 @@ SERVICES = [
          title="Post-investment support",
          short="Independent monitoring of borrowers and investees, portfolio reviews, practical support to the institutions that receive finance, and turnaround plans.",
          covers="Monitoring of borrowers and investees for lenders and investors, portfolio reviews, hands-on support to the businesses and financial institutions that receive finance, and turnaround plans.",
-         lead="Dickson Turyahabwe", initials="DT", lead_role="Principal Consultant, SMEs and Financial Inclusion"),
+         lead="Sebyala Samuel", initials="SS", lead_role="Principal Consultant, Due Diligence and Credit Risk"),
     dict(slug="monitoring-and-evaluation", num="03",
          title="Monitoring and evaluation",
          short="Baselines, M&E frameworks and plans, mid-term and end-line evaluations, surveys, capacity assessments and M&E training.",
@@ -83,7 +83,7 @@ SERVICES = [
          title="Market analysis",
          short="Market assessments, sector and value-chain studies, segmentation, customer and product research, and policy and trade studies.",
          covers="Market assessments, sector and value-chain studies, market segmentation, customer and product research, and policy and trade studies.",
-         lead="Dickson Turyahabwe", initials="DT", lead_role="Principal Consultant, SMEs and Financial Inclusion"),
+         lead="Shafiki Sabiiti", initials="SS", lead_role="Statistician and Data Analyst"),
     dict(slug="feasibility-and-strategy", num="07",
          title="Feasibility studies and strategic management",
          short="Feasibility and pre-feasibility studies, financial models and bankable proposals, strategic and business plans, board reviews and turnaround plans.",

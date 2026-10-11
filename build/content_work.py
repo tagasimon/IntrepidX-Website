@@ -2,13 +2,13 @@ from build import *
 from content_track import FIRM, TEAM
 
 SECTORS = [
-    ("Financial services and microfinance", "aBi Finance appraisal, monitoring and delinquency assignments (IntrepidX); Wazalendo SACCO; the IFAD-funded Rural Financial Services Programme; Uganda Bankers Association; AMIR in Rwanda"),
+    ("Financial services and microfinance", "aBi Finance appraisal, monitoring and delinquency assignments (IntrepidX); Uganda Bankers Association; credit scoring for a Ugandan lender"),
     ("Development and impact finance", "Due diligence for Kampani (IntrepidX); loan monitoring for GSIF (IntrepidX); Segal Family Foundation; credit guarantee structuring; UNCDF local investment finance"),
-    ("Agriculture and agribusiness", "Monitoring of a commodity exporter (IntrepidX); due diligence on an agro-processor (IntrepidX); aBi evaluations; a GIZ aquaculture baseline; USAID/TechnoServe cooperative support; NAADS and NARO"),
-    ("SMEs and cooperatives", "Emyooga SACCOs (Microfinance Support Centre); 125 UCCFS member SACCOs; business development services for Cordaid Rwanda"),
-    ("Public sector and public finance", "Sub-national PEFA; a Ministry of Finance reporting tool; evaluation of Public Accounts Committees; a turnaround strategy for cooperatives (Ministry of Trade, Industry and Cooperatives)"),
+    ("Agriculture and agribusiness", "Monitoring of a commodity exporter (IntrepidX); due diligence on an agro-processor (IntrepidX); aBi evaluations; a GIZ aquaculture baseline; farmer organisations for TechnoServe's HORTIMAP project; NAADS and NARO"),
+    ("SMEs and social enterprises", "SME debt and equity transactions (Iungo Capital); a US$25 million SME credit portfolio; accounts and tax returns for SMEs"),
+    ("Public sector and public finance", "Sub-national PEFA; a Ministry of Finance reporting tool; evaluation of Public Accounts Committees"),
     ("Water, climate and environment", "SIWI groundwater financing; a UNCDF groundwater finance framework; FCDO Climate Smart Jobs; an evaluation of climate adaptation work"),
-    ("Health, education, youth and social protection", "Senior Citizen Grant (Expanding Social Protection); an Enabel health insurance study; SEARCH IPT; the School Health Policy; the RETI youth initiative for refugee and host communities (Mastercard Foundation)"),
+    ("Health, education, youth and social protection", "Senior Citizen Grant (Expanding Social Protection); SEARCH IPT; the School Health Policy; the RETI youth initiative for refugee and host communities (Mastercard Foundation)"),
     ("Manufacturing, energy and agro-industry", "ERP and automation for manufacturers; renewable energy finance"),
 ]
 
@@ -115,14 +115,14 @@ def work_page():
   <div class="container">
     <div class="map-block">
       <figure data-reveal>
-        <img src="assets/img/africa-map.svg?v=3" width="360" height="380" alt="Map of Africa showing Uganda, Kenya, Rwanda, Tanzania, South Sudan, Namibia, Mali, Senegal and South Africa" loading="lazy">
+        <img src="assets/img/africa-map.svg?v=4" width="360" height="380" alt="Map of Africa showing Uganda, Kenya, Rwanda, South Sudan, Namibia, Mali, Senegal and South Africa" loading="lazy">
       </figure>
       <div data-reveal class="d1">
         <span class="eyebrow">Countries</span>
         <h2 class="display-2">Where we have worked</h2>
         <ul class="map-legend mt-s">
           <li><span class="swatch swatch--base" aria-hidden="true"></span><span><strong>Uganda</strong>, our base, with assignments in the Central, Western, Eastern and Northern regions and in West Nile.</span></li>
-          <li><span class="swatch swatch--led" aria-hidden="true"></span><span><strong>Kenya, Rwanda, Tanzania and South Sudan</strong>, where the firm or team members have worked on assignments.</span></li>
+          <li><span class="swatch swatch--led" aria-hidden="true"></span><span><strong>Kenya, Rwanda and South Sudan</strong>, where the firm or team members have worked on assignments.</span></li>
           <li><span class="swatch swatch--team" aria-hidden="true"></span><span><strong>Namibia, Mali, Senegal and South Africa</strong>, covered by team members' assignments, and IGAD member states (a regional trade-policy assessment).</span></li>
         </ul>
         <p class="mt-s"><strong>Clients outside Africa:</strong> Kampani (Belgium), Global Social Impact Fund (Spain) and the Segal Family Foundation (New Jersey, USA).</p>
